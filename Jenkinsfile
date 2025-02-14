@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_USER = "saadiqkhn"
-        IMAGE_NAME = "saadiqkhn/nginx-jenkins"
+        DOCKERHUB_USER = "tahirbaltee"
+        IMAGE_NAME = "tahirbaltee/nginx-jenkins"
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/saadiqkhn/nginx-docker-pipeline.git'
+                git branch: 'main', url: 'https://github.com/TahirBaltee/nginx-docker-pipeline.git'
             }
         }
         
